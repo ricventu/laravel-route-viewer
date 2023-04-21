@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Ricventu\LaravelRouteViewer\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelRouteViewerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-route-viewer';
 
     public $description = 'My command';
 
