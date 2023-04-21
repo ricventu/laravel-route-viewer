@@ -23,17 +23,10 @@ You can install the package via composer:
 composer require ricventu/laravel-route-viewer
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-route-viewer-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-route-viewer-config"
+php artisan vendor:publish --tag="route-viewer-config"
 ```
 
 This is the contents of the published config file:
@@ -46,14 +39,13 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="laravel-route-viewer-views"
+php artisan vendor:publish --tag="route-viewer-views"
 ```
 
-## Usage
+Optionally, you can publish the assets using
 
-```php
-$laravelRouteViewer = new Ricventu\LaravelRouteViewer();
-echo $laravelRouteViewer->echoPhrase('Hello, Ricventu!');
+```bash
+php artisan vendor:publish --tag="route-viewer-assets"
 ```
 
 ## Testing

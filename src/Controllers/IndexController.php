@@ -15,8 +15,8 @@ class IndexController extends Controller
 
     public function __invoke()
     {
-        return Inertia::render('Routes/Index', [
-            'routes' => $this->router->getRoutes(),
+        return Inertia::render('Index', [
+//            'routes' => $this->router->getRoutes(),
         ]);
     }
 }

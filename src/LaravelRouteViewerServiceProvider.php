@@ -18,7 +18,11 @@ class LaravelRouteViewerServiceProvider extends PackageServiceProvider
             ->name('laravel-route-viewer')
             ->hasConfigFile()
             ->hasRoutes('routes')
-            ->hasViews()
-            ->hasAssets();
+            ->hasViews();
+
+        $this->publishes([
+            $this->package->basePath("/../public/vendor/{$this->package->shortName()}") => public_path("vendor/{$this->package->shortName()}"),
+        ], ["{$this->package->shortName()}-assets", 'laravel-assets']);
+
     }
 }

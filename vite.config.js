@@ -5,8 +5,7 @@ export default defineConfig({
   plugins: [
     laravel({
       input: ['resources/js/app.jsx'],
-      publicDirectory: 'resources',
-      buildDirectory: 'dist',
+      buildDirectory: 'vendor/route-viewer',
       refresh: true,
     }),
   ],

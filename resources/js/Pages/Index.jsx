@@ -1,8 +1,12 @@
+import React from 'react'
 
-
-const Index = () => {
+const Index = (props) => {
   return (
-    <h1>HELLO!</h1>
+    <div>
+      <h1>Route Viewer</h1>
+      <p></p>
+    </div>
+
   )
 }
 

@@ -5,10 +5,10 @@ use Ricventu\LaravelRouteViewer\Controllers\IndexController;
 use Ricventu\LaravelRouteViewer\Middlewares\HandleInertiaRequests;
 
 
-Route::prefix(config('routes-viewer.uri'))
-    ->name(config('routes-viewer.route_name'))
+Route::prefix(config('route-viewer.uri'))
+    ->name(config('route-viewer.route_name'))
     ->middleware(HandleInertiaRequests::class)
     ->group(function () {
 
-    Route::get('', IndexController::class);
-});
+        Route::get('', IndexController::class);
+    });
