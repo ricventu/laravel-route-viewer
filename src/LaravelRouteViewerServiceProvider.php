@@ -18,8 +18,6 @@ class LaravelRouteViewerServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-route-viewer')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-route-viewer_table')
-            ->hasCommand(LaravelRouteViewerCommand::class);
+            ->hasViews();
     }
 }
