@@ -2,7 +2,6 @@
 
 namespace Ricventu\LaravelRouteViewer;
 
-use Ricventu\LaravelRouteViewer\Commands\LaravelRouteViewerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -18,6 +17,7 @@ class LaravelRouteViewerServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-route-viewer')
             ->hasConfigFile()
+            ->hasRoutes('routes')
             ->hasViews()
             ->hasAssets();
     }
