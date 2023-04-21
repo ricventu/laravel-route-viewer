@@ -2,9 +2,9 @@
 
 namespace Ricventu\LaravelRouteViewer;
 
+use Ricventu\LaravelRouteViewer\Commands\LaravelRouteViewerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Ricventu\LaravelRouteViewer\Commands\LaravelRouteViewerCommand;
 
 class LaravelRouteViewerServiceProvider extends PackageServiceProvider
 {
