@@ -4,6 +4,7 @@ namespace Ricventu\LaravelRouteViewer\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Routing\Router;
+use Inertia\Inertia;
 
 class IndexController extends Controller
 {
@@ -14,6 +15,8 @@ class IndexController extends Controller
 
     public function __invoke()
     {
-//        $this->router->getRoutes();
+        return Inertia::render('Routes/Index', [
+            'routes' => $this->router->getRoutes(),
+        ]);
     }
 }
