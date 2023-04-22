@@ -18,6 +18,7 @@ class IndexController extends Controller
     public function __invoke()
     {
         $routes = $this->laravelRouteViewer->getRoutes();
+
         return Inertia::render('Index', [
             'routes' => $routes,
         ]);
