@@ -4,7 +4,7 @@ return [
 
     'enabled' => (bool) env('ROUTE_VIEWER', true),
 
-    'uri' => '/route-viewer',
+    'route_path' => 'route-viewer',
 
     'route_name' => 'route-viewer',
 

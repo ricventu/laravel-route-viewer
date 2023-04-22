@@ -2,12 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Ricventu\LaravelRouteViewer\Controllers\IndexController;
-use Ricventu\LaravelRouteViewer\Middlewares\HandleInertiaRequests;
 
-Route::prefix(config('route-viewer.uri'))
-    ->name(config('route-viewer.route_name'))
-    ->middleware(HandleInertiaRequests::class)
+Route::prefix(config('route-viewer.route_path'))
+    ->name(config('route-viewer.route_name').'.')
     ->group(function () {
 
-        Route::get('', IndexController::class);
+        Route::get('', IndexController::class)->name('index');
     });
