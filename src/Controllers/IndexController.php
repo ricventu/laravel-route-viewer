@@ -4,20 +4,18 @@ namespace Ricventu\LaravelRouteViewer\Controllers;
 
 use Illuminate\Routing\Controller;
 use Inertia\Inertia;
-use Ricventu\LaravelRouteViewer\LaravelRouteViewer;
+use Ricventu\LaravelRouteViewer\Facades\LaravelRouteViewer;
 use Ricventu\LaravelRouteViewer\Middlewares\HandleInertiaRequests;
 
 class IndexController extends Controller
 {
-    public function __construct(
-        protected LaravelRouteViewer $laravelRouteViewer
-    ) {
+    public function __construct() {
         $this->middleware(HandleInertiaRequests::class);
     }
 
     public function __invoke()
     {
-        $routes = $this->laravelRouteViewer->getRoutes();
+        $routes = LaravelRouteViewer::getRoutes();
         return Inertia::render('Index', [
             'routes' => $routes,
         ]);

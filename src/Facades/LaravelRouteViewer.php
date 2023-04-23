@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \Ricventu\LaravelRouteViewer\LaravelRouteViewer
+ * @method static getRoutes()
  */
 class LaravelRouteViewer extends Facade
 {
