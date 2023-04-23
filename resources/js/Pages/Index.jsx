@@ -1,8 +1,10 @@
 import React from 'react'
 
 const Index = (props) => {
-console.log(props)
+
   return (
+    <div>
+
     <table>
       <thead>
       <tr>
@@ -26,6 +28,7 @@ console.log(props)
       ))}
       </tbody>
     </table>
+    </div>
   )
 }
 

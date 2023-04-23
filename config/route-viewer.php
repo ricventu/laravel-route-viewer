@@ -9,6 +9,7 @@ return [
     'route_name' => 'route-viewer',
 
     'ignore_routes' => [
+        'route-viewer*',
         '_ignition/*',
         'sanctum/*',
         'livewire/*',
