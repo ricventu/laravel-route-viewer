@@ -9,7 +9,8 @@ use Ricventu\LaravelRouteViewer\Middlewares\HandleInertiaRequests;
 
 class IndexController extends Controller
 {
-    public function __construct() {
+    public function __construct()
+    {
         $this->middleware(HandleInertiaRequests::class);
     }
 
