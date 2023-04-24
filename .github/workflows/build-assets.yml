@@ -1,8 +1,9 @@
 name: build assets
 
 on:
-  release:
-    types: [released]
+  push:
+    paths:
+      - 'resources/**'
 
 permissions:
   contents: write
