@@ -3,9 +3,11 @@ module.exports = {
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.jsx",
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
+  darkMode: "class"
 }
