@@ -1,6 +1,5 @@
 <?php
 
-
 it('index', function () {
     expect(true)->toBeTrue();
 
