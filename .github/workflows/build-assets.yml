@@ -1,5 +1,13 @@
 name: build assets
-on: [push]
+
+on:
+  push:
+    paths:
+      - '**.js'
+      - '**.css'
+
+permissions:
+  contents: write
 
 jobs:
   build:
