@@ -28,9 +28,5 @@ class TestCase extends Orchestra
     {
         config()->set('database.default', 'testing');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-route-viewer_table.php.stub';
-        $migration->up();
-        */
     }
 }

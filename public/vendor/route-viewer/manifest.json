@@ -1,0 +1,23 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-68455919.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/Pages/Index.jsx": {
+    "file": "assets/Index-c299dbf5.js",
+    "imports": [
+      "resources/js/app.jsx"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Index.jsx"
+  },
+  "resources/js/app.jsx": {
+    "dynamicImports": [
+      "resources/js/Pages/Index.jsx"
+    ],
+    "file": "assets/app-91395438.js",
+    "isEntry": true,
+    "src": "resources/js/app.jsx"
+  }
+}
