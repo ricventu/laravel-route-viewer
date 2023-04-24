@@ -14,7 +14,7 @@ jobs:
           node-version: 18.x
 
       - name: Cache
-        uses: actions/cache@v2.1.8
+        uses: actions/cache@v3.3.1
         with:
           # A list of files, directories, and wildcard patterns to cache and restore
           path: node_modules, yarn.lock
