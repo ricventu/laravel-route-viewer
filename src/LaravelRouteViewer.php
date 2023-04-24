@@ -17,6 +17,6 @@ class LaravelRouteViewer
         $ignore = config('route-viewer.ignore_routes');
         $routes = $routes->filter(fn ($route) => ! Str::is($ignore, $route->uri));
 
-        return $routes->values();
+        return $routes;
     }
 }
