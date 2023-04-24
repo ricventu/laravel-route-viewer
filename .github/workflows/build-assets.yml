@@ -1,20 +1,21 @@
 name: build assets
 
 on:
-  push:
-    paths:
-      - '**.js'
-      - '**.css'
+  release:
+    types: [released]
 
 permissions:
   contents: write
 
 jobs:
   build:
-    name: Test
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: main
 
       - name: Set Node.js 18.x
         uses: actions/setup-node@v3
@@ -27,7 +28,7 @@ jobs:
           # A list of files, directories, and wildcard patterns to cache and restore
           path: node_modules, yarn.lock
           key: package.json
-    
+
       - name: Run install
         uses: borales/actions-yarn@v4
         with:
@@ -41,4 +42,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Fix styling
+          branch: main
+          commit_message: Build assets
