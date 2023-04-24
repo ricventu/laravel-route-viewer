@@ -21,13 +21,13 @@ class IndexController extends Controller
         $routes = LaravelRouteViewer::getRoutes();
 
         $search = $request->get('search');
-        if (!empty($search)) {
-            $routes = $routes->filter(fn($route) => Str::is("*$search*", $route->uri));
+        if (! empty($search)) {
+            $routes = $routes->filter(fn ($route) => Str::is("*$search*", $route->uri));
         }
 
         return Inertia::render('Index', [
             'routes' => $routes->values(),
-            'filters' => $request->only(['search'])
+            'filters' => $request->only(['search']),
         ]);
     }
 }
