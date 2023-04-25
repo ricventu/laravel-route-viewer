@@ -2,7 +2,7 @@
 
 return [
 
-    'enabled' => (bool) env('ROUTE_VIEWER', true),
+    'enabled' => env('ROUTE_VIEWER', true),
 
     'route_path' => 'route-viewer',
 
