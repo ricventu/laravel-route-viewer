@@ -1,6 +1,6 @@
 import React from 'react'
-import { Head, router, useRemember } from '@inertiajs/react'
-import Github from '../../images/github-mark.svg'
+import { router, useRemember } from '@inertiajs/react'
+import Layout from '../Layout/Layout'
 
 const Index = (props) => {
   const [search, setSearch] = useRemember(props.filters.search || '', 'search')
@@ -12,18 +12,6 @@ const Index = (props) => {
 
   return (
     <div>
-      <Head title={'Routes'}/>
-
-      <div className={'flex justify-between'}>
-        <h1 className="mb-2 mt-0 text-3xl font-medium leading-tight text-primary">
-          Route Viewer
-        </h1>
-        <div>
-          <a href="https://www.github.com/ricventu/laravel-route-viewer" target="_blank">
-            <img src={Github} alt="View on Github" height={48} width={48}/>
-          </a>
-        </div>
-      </div>
       <div>
         <input type="text" className={'border px-2'} placeholder={'Search...'} value={search} onChange={onSearch}/>
       </div>
@@ -70,5 +58,7 @@ const Index = (props) => {
     </div>
   )
 }
+
+Index.layout = page => <Layout children={page}/>
 
 export default Index
