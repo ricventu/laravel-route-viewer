@@ -9,7 +9,7 @@ class PackageEnabled
 {
     public function handle(Request $request, Closure $next)
     {
-        abort_unless(config('routes-viewer.enabled'), 404);
+        abort_unless(config('route-viewer.enabled'), 404);
 
         return $next($request);
     }

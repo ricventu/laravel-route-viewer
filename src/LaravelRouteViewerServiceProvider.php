@@ -17,12 +17,7 @@ class LaravelRouteViewerServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-route-viewer')
             ->hasConfigFile()
-            ->hasViews();
-
-        if (! config('route-viewer.enabled')) {
-            return ;
-        }
-        $package
+            ->hasViews()
             ->hasRoutes('routes');
 
         $this->publishes([
