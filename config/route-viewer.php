@@ -10,7 +10,7 @@ return [
 
     'middleware' => [
         'web',
-        \Ricventu\LaravelRouteViewer\Middlewares\RouteViewerEnabled::class
+        \Ricventu\LaravelRouteViewer\Middlewares\RouteViewerEnabled::class,
     ],
 
     'ignore_routes' => [
