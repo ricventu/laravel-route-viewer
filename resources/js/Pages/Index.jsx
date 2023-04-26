@@ -11,7 +11,7 @@ const Index = (props) => {
     setSearch(e.target.value)
     router.get('', { search: e.target.value }, { preserveState: true })
   }
-  console.log(props.routes)
+
   return (
     <div>
       <div>
