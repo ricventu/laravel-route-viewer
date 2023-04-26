@@ -1,11 +1,18 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-4b03a0c5.css",
+    "file": "assets/app-72a06b6a.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
+  "resources/images/github-mark.svg": {
+    "file": "assets/github-mark-7a0dd11e.svg",
+    "src": "resources/images/github-mark.svg"
+  },
   "resources/js/Pages/Index.jsx": {
-    "file": "assets/Index-2dc06981.js",
+    "assets": [
+      "assets/github-mark-7a0dd11e.svg"
+    ],
+    "file": "assets/Index-8970eb21.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -16,7 +23,7 @@
     "dynamicImports": [
       "resources/js/Pages/Index.jsx"
     ],
-    "file": "assets/app-5d8c73eb.js",
+    "file": "assets/app-24a71c45.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   }
