@@ -3,8 +3,7 @@
 it('index', function () {
     $this->withoutVite()
         ->get('/route-viewer')
-        ->assertOk()
-    ;
+        ->assertOk();
 });
 
 // manifest.json not found
