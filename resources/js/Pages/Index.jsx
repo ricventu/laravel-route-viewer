@@ -19,7 +19,7 @@ const Index = (props) => {
           Route Viewer
         </h1>
         <div>
-          <a href="https://www.github.com/ricventu/route-viewer" target="_blank">
+          <a href="https://www.github.com/ricventu/laravel-route-viewer" target="_blank">
             <img src={Github} alt="View on Github" height={48} width={48}/>
           </a>
         </div>
