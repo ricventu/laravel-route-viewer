@@ -1,8 +1,9 @@
 import React from 'react'
 import { Head, router, useRemember } from '@inertiajs/react'
+import Github from '../../images/github-mark.svg'
 
 const Index = (props) => {
-  const [search, setSearch] = useRemember(props.filters.search)
+  const [search, setSearch] = useRemember(props.filters.search || '', 'search')
 
   const onSearch = (e) => {
     setSearch(e.target.value)
@@ -13,8 +14,17 @@ const Index = (props) => {
     <div>
       <Head title={'Routes'}/>
 
+      <div className={'flex justify-between'}>
+        <h1 className="mb-2 mt-0 text-3xl font-medium leading-tight text-primary">
+          Route Viewer
+        </h1>
+        <div>
+          <a href="https://www.github.com/ricventu/route-viewer" target="_blank">
+            <img src={Github} alt="View on Github" height={48} width={48}/>
+          </a>
+        </div>
+      </div>
       <div>
-        <h1 className={'text-3xl'}>Routes</h1>
         <input type="text" className={'border px-2'} placeholder={'Search...'} value={search} onChange={onSearch}/>
       </div>
       <div className="flex flex-col">
