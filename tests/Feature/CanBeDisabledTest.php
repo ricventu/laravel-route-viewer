@@ -11,7 +11,7 @@ it('Can be enabled', function () {
     $service->register();
     $service->boot();
 
-    $this->withoutVite()->get('/route-viewer')->assertOk();
+    $this->withoutVite()->get(route('route-viewer.index'))->assertOk();
 });
 
 it('Can be disabled', function () {
@@ -23,5 +23,5 @@ it('Can be disabled', function () {
     $service->register();
     $service->boot();
 
-    $this->withoutVite()->get('/route-viewer')->assertNotFound();
+    $this->withoutVite()->get(route('route-viewer.index'))->assertNotFound();
 });

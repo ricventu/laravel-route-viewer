@@ -14,9 +14,11 @@ return [
     ],
 
     'ignore_routes' => [
-        'route-viewer*',
+        'route-viewer/*',
         '_ignition/*',
         'sanctum/*',
         'livewire/*',
+        'horizon/*',
+        'telescope/*'
     ],
 ];
