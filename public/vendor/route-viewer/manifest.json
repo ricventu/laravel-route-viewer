@@ -12,7 +12,7 @@
     "assets": [
       "assets/github-mark-7a0dd11e.svg"
     ],
-    "file": "assets/Index-42491dc5.js",
+    "file": "assets/Index-6c5cd610.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -23,7 +23,7 @@
     "dynamicImports": [
       "resources/js/Pages/Index.jsx"
     ],
-    "file": "assets/app-37aebdd0.js",
+    "file": "assets/app-057b96cf.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   }
