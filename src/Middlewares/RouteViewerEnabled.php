@@ -5,7 +5,7 @@ namespace Ricventu\LaravelRouteViewer\Middlewares;
 use Closure;
 use Illuminate\Http\Request;
 
-class PackageEnabled
+class RouteViewerEnabled
 {
     public function handle(Request $request, Closure $next)
     {

@@ -1,14 +1,8 @@
 <?php
 
 it('index', function () {
-    $this->withoutVite()
-        ->get('/route-viewer')
-        ->assertOk();
+    $this->get('/route-viewer')
+        ->assertInertia(fn (\Inertia\Testing\AssertableInertia $page) => $page
+        ->component('Index')->has('routes')
+        );
 });
-
-// manifest.json not found
-//it('index content', function () {
-//    $this->get('/route-viewer')
-//        ->assertOk()
-//    ;
-//});

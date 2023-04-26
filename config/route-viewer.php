@@ -8,6 +8,11 @@ return [
 
     'route_name' => 'route-viewer',
 
+    'middleware' => [
+        'web',
+        \Ricventu\LaravelRouteViewer\Middlewares\RouteViewerEnabled::class
+    ],
+
     'ignore_routes' => [
         'route-viewer*',
         '_ignition/*',

@@ -1,3 +1,4 @@
+
 # Laravel Route Viewer
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ricventu/laravel-route-viewer.svg?style=flat-square)](https://packagist.org/packages/ricventu/laravel-route-viewer)
@@ -28,16 +29,16 @@ return [
 ];
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="route-viewer-views"
-```
-
 Publish the assets using
 
 ```bash
 php artisan vendor:publish --tag="route-viewer-assets"
+```
+
+Optionally, you can publish the views using
+
+```bash
+php artisan vendor:publish --tag="route-viewer-views"
 ```
 
 ## Testing
