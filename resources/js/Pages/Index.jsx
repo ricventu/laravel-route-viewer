@@ -1,6 +1,8 @@
 import React from 'react'
 import { router, useRemember } from '@inertiajs/react'
 import Layout from '../Layout/Layout'
+import MiddlewaresCell from '../components/MiddlewaresCell'
+import MethodsCell from '../components/MethodsCell'
 
 const Index = (props) => {
   const [search, setSearch] = useRemember(props.filters.search || '', 'search')
@@ -9,7 +11,7 @@ const Index = (props) => {
     setSearch(e.target.value)
     router.get('', { search: e.target.value }, { preserveState: true })
   }
-
+  console.log(props.routes)
   return (
     <div>
       <div>
@@ -22,11 +24,11 @@ const Index = (props) => {
               <table className="min-w-full text-left text-sm font-light">
                 <thead className="border-b bg-white font-medium dark:border-neutral-500 dark:bg-neutral-600">
                 <tr>
-                  <th scope="col" className="px-6 py-4">methods</th>
-                  <th scope="col" className="px-6 py-4">uri</th>
-                  <th scope="col" className="px-6 py-4">name</th>
-                  <th scope="col" className="px-6 py-4">action</th>
-                  <th scope="col" className="px-6 py-4">middleware</th>
+                  <th scope="col" className="px-6 py-4">Method</th>
+                  <th scope="col" className="px-6 py-4">Uri</th>
+                  <th scope="col" className="px-6 py-4">Name</th>
+                  <th scope="col" className="px-6 py-4">Action</th>
+                  <th scope="col" className="px-6 py-4">Middleware</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -34,20 +36,17 @@ const Index = (props) => {
                   <tr key={index}
                       className={
                         index % 2 === 0 ?
-                          'border-b bg-neutral-100 dark:border-neutral-500 dark:bg-neutral-700'
+                          'border-b bg-neutral-100 dark:border-neutral-500 dark:bg-neutral-700 hover:bg-blue-100 dark:hover:bg-blue-800'
                           :
-                          'border-b bg-white dark:border-neutral-500 dark:bg-neutral-600'
+                          'border-b bg-white dark:border-neutral-500 dark:bg-neutral-600 hover:bg-blue-100 dark:hover:bg-blue-800'
                       }
                   >
-                    <td
-                      className="whitespace-nowrap px-6 py-4">{route.methods.reduce((prev, currentValue) => prev + ',' + currentValue, '').replace(/^,/, '')}</td>
+                    <td className="whitespace-nowrap px-6 py-4"><MethodsCell route={route}/></td>
                     <td className="whitespace-nowrap px-6 py-4">{route.uri}</td>
                     <td className="whitespace-nowrap px-6 py-4">{route.action.as}</td>
                     <td className="whitespace-nowrap px-6 py-4">{route.action.controller}</td>
-                    <td
-                      className="whitespace-nowrap px-6 py-4">{route.computedMiddleware?.reduce((prev, currentValue) => prev + ',' + currentValue, '').replace(/^,/, '')}</td>
+                    <td className="whitespace-nowrap px-6 py-4"><MiddlewaresCell route={route}/></td>
                   </tr>
-
                 ))}
                 </tbody>
               </table>
