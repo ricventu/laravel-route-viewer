@@ -19,6 +19,6 @@ return [
         'sanctum*',
         'livewire*',
         'horizon*',
-        'telescope*'
+        'telescope*',
     ],
 ];
