@@ -11,3 +11,4 @@ testbench.yaml
 node_modules
 .env
 /public/hot
+yarn.lock
