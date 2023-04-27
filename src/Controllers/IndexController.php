@@ -5,9 +5,9 @@ namespace Ricventu\LaravelRouteViewer\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Routing\Route;
-use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Inertia\Inertia;
+use Inertia\Response;
 use Ricventu\LaravelRouteViewer\Facades\LaravelRouteViewer;
 use Ricventu\LaravelRouteViewer\Middlewares\HandleInertiaRequests;
 
@@ -18,9 +18,8 @@ class IndexController extends Controller
         $this->middleware(HandleInertiaRequests::class);
     }
 
-    public function __invoke(Request $request)
+    public function __invoke(Request $request): Response
     {
-        /** @var Collection $routes */
         $routes = LaravelRouteViewer::getRoutes();
 
         $search = $request->get('search');
