@@ -14,8 +14,8 @@ const Index = (props) => {
 
   return (
     <div>
-      <div>
-        <input type="text" className={'border px-2'} placeholder={'Search...'} value={search} onChange={onSearch}/>
+      <div className={'flex px-6'}>
+        <input type="text" className={'border px-2 w-96'} placeholder={'Search...'} value={search} onChange={onSearch}/>
       </div>
       <div className="flex flex-col">
         <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">

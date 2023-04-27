@@ -1,13 +1,10 @@
 import React from 'react'
-import { usePage } from '@inertiajs/react'
 import Github from '../../images/github-mark.svg'
 
 const Layout = ({children}) => {
-  const props = usePage().props
-
   return (
-    <div className={'p-2'}>
-      <div className={'flex justify-between'}>
+    <div className={'px-2 pt-2'}>
+      <div className={'flex justify-between px-6'}>
         <h1 className="mb-2 mt-0 text-3xl font-medium leading-tight text-primary">
           Route Viewer
         </h1>
