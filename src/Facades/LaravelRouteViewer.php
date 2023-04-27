@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \Ricventu\LaravelRouteViewer\LaravelRouteViewer
  *
- * @method static getRoutes(): Collection
+ * @method static Collection getRoutes()
  *
  * @mixin \Ricventu\LaravelRouteViewer\LaravelRouteViewer
  */
