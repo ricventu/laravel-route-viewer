@@ -16,16 +16,16 @@ You can install the package via composer:
 composer require ricventu/laravel-route-viewer
 ```
 
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="route-viewer-config"
-```
-
 Publish the assets using
 
 ```bash
 php artisan vendor:publish --tag="route-viewer-assets"
+```
+
+You can publish the config file with:
+
+```bash
+php artisan vendor:publish --tag="route-viewer-config"
 ```
 
 Optionally, you can publish the views using
