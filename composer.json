@@ -5,7 +5,7 @@
         "laravel",
         "routes",
         "viewer",
-        "route-viewer",
+        "route-viewer"
     ],
     "homepage": "https://github.com/ricventu/laravel-route-viewer",
     "license": "MIT",
