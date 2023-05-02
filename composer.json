@@ -2,9 +2,10 @@
     "name": "ricventu/laravel-route-viewer",
     "description": "Laravel Route Viewer",
     "keywords": [
-        "ricventu",
         "laravel",
-        "laravel-route-viewer"
+        "routes",
+        "viewer",
+        "route-viewer",
     ],
     "homepage": "https://github.com/ricventu/laravel-route-viewer",
     "license": "MIT",
