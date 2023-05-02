@@ -22,13 +22,6 @@ You can publish the config file with:
 php artisan vendor:publish --tag="route-viewer-config"
 ```
 
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 Publish the assets using
 
 ```bash
