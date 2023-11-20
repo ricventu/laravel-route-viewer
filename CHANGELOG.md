@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-route-viewer` will be documented in this file.
 
+## v1.1.2 - 2023-11-20
+
+update and fixes
+
 ## v1.1.1 - 2023-04-27
 
 fix build assets
