@@ -19,6 +19,6 @@ class LaravelRouteViewer
         $ignorePaths = config('route-viewer.ignore_routes_paths');
         $ignoreNames = config('route-viewer.ignore_routes_names');
 
-        return $routes->filter(fn (Route $route) => !Str::is($ignorePaths, $route->uri()) && !Str::is($ignoreNames, $route->getName()));
+        return $routes->filter(fn (Route $route) => ! Str::is($ignorePaths, $route->uri()) && ! Str::is($ignoreNames, $route->getName()));
     }
 }

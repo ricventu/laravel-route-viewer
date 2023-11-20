@@ -22,5 +22,5 @@ return [
         'telescope*',
     ],
     'ignore_routes_names' => [
-    ]
+    ],
 ];
