@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-188e26b3.css",
+    "file": "assets/app-fc7d3a90.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -12,7 +12,7 @@
     "assets": [
       "assets/github-mark-7a0dd11e.svg"
     ],
-    "file": "assets/Index-8b3e5691.js",
+    "file": "assets/Index-8446b697.js",
     "imports": [
       "resources/js/app.jsx"
     ],
@@ -23,7 +23,7 @@
     "dynamicImports": [
       "resources/js/Pages/Index.jsx"
     ],
-    "file": "assets/app-d50ee8ab.js",
+    "file": "assets/app-9ce9ef8d.js",
     "isEntry": true,
     "src": "resources/js/app.jsx"
   }

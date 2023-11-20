@@ -1,10 +1,9 @@
 const MethodsCell = ({route}) => {
-
   return (
     <ul>
-      {route.methods.map((middleware, index) => (
+      {route.methods?.map((method, index) => (
         <li key={index}>
-          {middleware}
+          {method}
         </li>
       ))}
     </ul>

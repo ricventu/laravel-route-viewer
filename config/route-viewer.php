@@ -13,7 +13,7 @@ return [
         \Ricventu\LaravelRouteViewer\Middlewares\RouteViewerEnabled::class,
     ],
 
-    'ignore_routes' => [
+    'ignore_routes_paths' => [
         'route-viewer*',
         '_ignition*',
         'sanctum*',
@@ -21,4 +21,6 @@ return [
         'horizon*',
         'telescope*',
     ],
+    'ignore_routes_names' => [
+    ]
 ];

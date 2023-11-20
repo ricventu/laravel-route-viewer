@@ -2,6 +2,7 @@
 
 namespace Ricventu\LaravelRouteViewer;
 
+use Illuminate\Routing\Route;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
@@ -15,8 +16,9 @@ class LaravelRouteViewer
     public function getRoutes(): Collection
     {
         $routes = collect($this->router->getRoutes());
-        $ignore = config('route-viewer.ignore_routes');
+        $ignorePaths = config('route-viewer.ignore_routes_paths');
+        $ignoreNames = config('route-viewer.ignore_routes_names');
 
-        return $routes->filter(fn ($route) => ! Str::is($ignore, $route->uri));
+        return $routes->filter(fn (Route $route) => !Str::is($ignorePaths, $route->uri()) && !Str::is($ignoreNames, $route->getName()));
     }
 }
